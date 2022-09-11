@@ -1,0 +1,144 @@
+from random import randint
+import os
+print("\nNota del creador: cuando termines el juego se guardará un archivo de texto llamado \"Torre Infinita\" en tu dispositivo, no es dañino y tienes el derecho de eliminarlo. Disfruta del juego.\n\n\nTe doy la bienvenida a esta maravillosa experiencia que tienes la oportunidad de vivir.\nMuchas sorpresas te aguardan dentro de esta aventura... ¡comencemos!\n")
+count = (randint(250, 300))
+dificultad = input("Elije entre estos 3 modos de dificultad: Fácil [1], Normal [2], Muy Difícil [3]. [1/2/3]\n")
+if dificultad == "1":
+    count = (randint(80, 100))
+elif dificultad == "2":
+    count = (randint(250, 300))
+elif dificultad == "3":
+    count = (randint(800, 1000))
+else: print("No te he entendido, tu modo de dificultad se ha establecido como Normal.")
+nombre = input("\n¿Cómo te llamas? ")
+señor = "x"
+o = "x"
+while señor == "x" and o == "x":
+    genero = input("¿Tus pronombres son femeninos [F] o masculinos [M]? [F/M]\n")
+    if genero == "F" or genero == "f":
+        señor = "señorita"
+        o = "a"
+    elif genero == "M" or genero == "m":
+        señor = "señor"
+        o = "o"
+print(f"\n???: ¿{nombre}? Vaya... así que eres tú... te estaba esperando.\nTengo algo para ti, es una carta, aquí tienes.\n\n¡Has recibido Carta Misteriosa!")
+abrir = "x"
+while abrir != "Y" or abrir != "y":
+    abrir = input("\n¿Quieres leer Carta Misteriosa? [Y/N]: ")
+    if abrir == "Y" or abrir == "y":
+        break
+    elif abrir == "N" or abrir == "n":
+        print("Creo que deberías leerla...")
+    else: print("???")
+del abrir
+print(f"\nAbres la carta y en ella pone lo siguiente:\n\nQuerid{o} {nombre},\nme complace anunciarte que has sido invitad{o} a mi Torre.\nQuizás no me conozcas pese a que yo a ti te conozco muy bien.\nTe he mandado un chófer para que te lleve hacia tu destino, y no te preocupes por los gastos.\nFirmado,\n#1?x@0.\n\n???: Y ese chófer soy yo.\n\nDespués de escuchar esas palabras y antes de que te diese tiempo a procesar la información empiezas a sentirte maread{o} y cansad{o} hasta que tus párpados se cierran y te quedas totalmente dormid{o}.\n...\n...\n...")
+print("Te despiertas dentro de un vehículo, no es muy grande ni tiene mucha decoración aunque los asientos son lo suficientemente cómodos como para dormir en ellos, también ves a la persona que te entregó la carta conduciendo.")
+print("\nPodrías quedarte en silencio y esperar a ver que pasa o intentar hablar con el chófer sabiendo que es la persona que te ha metido dentro del vehículo.\n¿Qué haces?")
+decision_1 = "loop"
+while decision_1 == "loop":
+    decision_1 = input("\nOpción 1: guardar silencio [1]\nOpción 2: intentar dialogar con el misterioso chófer [2]\n")
+    if decision_1 == "1":
+        print("\nDecides que lo mejor es no hablar así que te pones a inspeccionar todo lo que puedes sin llamar mucho la atención.\nMiras por la ventana y lo primero que ves es que está lloviendo y eso hace que el ambiente sea un poco tenebroso, miras el paisaje y ves que el vehículo en el que montas está conduciendo por la ladera de una montaña, la montaña te suena aunque no eres capaz de ubicarla ni ponerle nombre. Por la otra ventana ves un pequeño pueblo justo a los pies de la montaña, no es un pueblo grande, y tampoco eres capaz de ponerle nombre ni ubicarlo.\nEs curioso, siempre has vivido en la misma ciudad y lo que has visto de momento aunque te suena, no sabes como se llama o dónde está ubicado en el mapa.\nTe preguntas cuánto tiempo habrás estado durmiendo.")
+        break
+    elif decision_1 == "2":
+        print(f"\nTe incorporas y empiezas a pensar qué decirle al chófer, pero este se te adelanta y empieza a hablar antes que tú.\n\nChófer: Veo que ya te has despertado, {nombre}, siento haberte traído de esta forma, pero cuando #1?x@0 invita a alguien a la torre debe ir sin falta, no podía permitirme que rechazases la invitación.\n\n{nombre}: ¿A dónde me llevas y quíen eres?¿Qué es esa Torre y quién es #1?x@0?\n\nChófer: No tienes por qué alterarte. Soy el chófer de #1?x@0, tiene a mucha gente trabajando para él, yo me encargo de llevar a los invitados a la Torre, es a donde te estoy llevando ahora, dentro de poco tiempo podrás verla. Cuando llegues sabrás muchás más cosas.\nAhora disfruta de los últimos minutos del viaje, no tardaremos en llegar.\n\n{nombre}: ¿Por qué me tenéis que llevar a ese sitio?\n\nNo obtienes ninguna respuesta por parte del chófer. Después de eso no volveís a hablar más. Intestas seguir su consejo y disfrutar del viaje, pero te es imposible, el vehículo traquetea por el asfalto y tienes una sensación horrible de que algo muy malo va a pasar.")
+        break
+    else: decision_1 = "loop"
+    print("\n???")
+del decision_1
+print("\nAntes de que te des cuenta empiezas a ver una estructura a lo lejos que presupones que es la Torre a la que te han invitado a ir, todavía no estás lo suficientemente cerca como para ver los detalles de la estructura, pero ves que el color es negro.\n\nChófer: Estamos a punto de llegar.\n\nA cada segundo que pasa te acercas un poco más a la Torre y la ves un poco mejor, es una torre alta, negra, imponente, robusta. Podrías pensar que es poco práctica para vivir pero ves un edificio al lado, quizás no sea la torre donde vive #1?x@0, quizás él viva en ese edificio contiguo y la Torre tenga otro fin, en tal caso... ¿qué esconde la Torre?\n\nChófer: Nos bajamos ya.\n\nNotas como el vehículo se detiene, a continuación el chófer se baja y te abre la puerta que tienes a tu izquierda para salir.\n¿Realmente quieres salir?")
+decision_2 = "loop"
+while decision_2 == "loop":
+    decision_2 = input("\nQuedarte en el coche [1]\nSalir del coche [2]\n")
+    if decision_2 == "1":
+        print(f"\nNo quieres ir a esa dichosa Torre a la a la que tanto insisten en que entres, no quieres ir y no piensas hacerlo, te quedas dentro de este vehículo.\n\nChófer: ¿Qué haces? Debes salir {señor} {nombre}. No puedes quedarte ahí dentro.\n...\nChófer: Sal.\n\n{nombre}: No.\n...\nEmpiezas a sentirte cansad{o}, está pasando de nuevo, tus ojos empiezan a cerrarse.\n...\n...\nTe despiertas ya dentro, perfecto, otra vez te ha dormido, es como si no pudieses tomar tus propias decisiones. No parece la Torre, así que supones que estás en el edificio contiguo a la Torre que viste antes. Visto desde dentro parece que este edificio se construyó hace no mucho.")
+        break
+    elif decision_2 == "2":
+        print("\nSales del vehículo, pensándolo bien no tendría sentido quedarse ahí dentro.\n\nChófer: Bien, vayamos hacia la Torre.\n\nVas junto al chófer en dirección a la Torre, piensas que quizás podrías intentar huir, pero tienes un mal presentemiento al respecto... mejor hacer lo que te dicen por ahora.\nLlegas a las puertas de la Torre, pero antes de entrar dentro de la misma vais al edificio contiguo que viste antes desde el vehículo. Viéndolo mejor, y a pesar de seguir con la estética de la misma Torre, este edificio parece más moderno, como si se hubiese construido hace no mucho, al contrario de la Torre que parece casi medieval.\n\nChófer: Entremos.\n\nY nada más entrar...")
+        break
+    else: decision_2 = "loop"
+    print('\n???')
+del decision_2
+print(f"\n???: Bienvenid{o} {nombre}.\n\nVes a la persona que dijo eso, parece un señor mayor, calvo, con esmoquin, por cierto, ¿¡Es que todon saben tu nombre?! Sí.\n\n???: Yo me encargaré de ti a partir de ahora, F tiene otras cosas que hacer.\n\nChófer: Adiós {nombre}, adiós R.\n\n{nombre}: ¿F?¿R?\n\n???: Me llaman R, y el chófer es F, pero no pienses en ello, no tendrás que usar esos nombres, para ti seré el mayordomo.\nTe diré algo, no son muchas las personas a las que invitan a la Torre, es casi un privilegio que estés aquí así que no desaproveches la oportunidad.\n\n{nombre}: ¿Qué oportunidad?\n\n*cataplof* se esucha un ruido seco desde fuera, como el de un saco de harina que cae desde alto...\nMayordomo hace sonar una campana\n...\nMayordomo: la oportunidad de... ver al grande, claro.\nEs tarde, ¿no quieres ir a dormir, {señor} {nombre}?\n\n{nombre}: Esto... creo que ya he dormido suficiente hoy... jeje.\n\nMayordomo: ¿Sí? Sabes qué, me has caído bien, te voy a dar un regalo, la verdad es que este edificio en el que estamos ahora es algo pequeño, pero tiene algunas habitaciones y yo tengo las llaves de todas ellas, solo por ser tú te voy a prestar una, dime, ¿cuál eliges?")
+decision_3 = "loop"
+while decision_3 == "loop":
+    decision_3 = input("\nLLave del armario [1]\nLLave de la nevera [2]\nLlave del sótano [3]\nLlave de la habitación[4]\n")
+    if decision_3 == "1":
+        print("\nMayordomo: Muy bien, toma la llave del armario, disfrútala.\n\nObtienes LLave del Armario.\n\nVas al armario y lo abres, allí te encuentras distintos tipos de ropas, no te pones nada porque no sabes quien ha podido llevar eso antes. Que decepcionante, deberías haber escogido otra llave.\nTe vas a dormir.")
+        break
+    if decision_3 == "2":
+        print("\nMayordomo: Supongo que te preguntarás que por qué la nevera tiene llave, en fin, toma, ya lo descubrirás\n\nMayordomo te entrega Llave de la Nevera.\n\nExploras un poco y llegas hasta la cocina, parece una cocina normal aunque después de examinarla un poco te das cuenta que no hay ni cuchillos ni tenedores ni cucharas, pero eso no es lo importante, vas a la nevera y compruebas que efectivamente hay una cerradura, ojalá dentro haya comida porque tienes hambre.\nInsertas la llave en el candado, giras la llave y la sacas. Ya no hay cerrdura, agarras el asa. Tienes esa sensación extraña de que algo malo puede ocurrir. Al fin y al cabo, para algo está cerrado con llave, ¿no? aunque solo es una nevera...")
+        abrir = "loop"
+        while abrir == "loop":
+            abrir = input("\n¿Debería abrir la nevera? [Y/N]: ")
+            if abrir == "Y" or abrir == "y":
+                print("\nA la porra, abres la nevera y... solo hay comida ¿por qué está cerrada con llave entonces? bueno, comida, a comer, tienes hambre, agarras lo primero que te resulta apetecible y te lo comes tranquilamente, luego cierras con llave la nevera y buscas a Mayordomo para devolverla.\nNo hay rastro de mayordomo así que dejas la llave en cualquier lugar y buscas un sitio para dormir.")
+                del abrir
+                break
+            elif abrir == "N" or abrir == "n":
+                print("\nNonono, ¿te deja llaves de puertas que deberían estar cerradas porque le caes bien? eso es muy raro, mejor dejar las puertas cerradas, cerradas.\nBuscas un sitio donde dormir y duermes.")
+                del abrir
+                break
+            else: abrir = "loop"
+            print("???")
+        break
+    if decision_3 == "3":
+        print(f"\nMayordomo: ¿La llave del sótano? Debes de ser muy valiente, pero aquí la tienes, que la disfrutes.\n\nObtienes LLave del Sótano de manos de Mayordomo.\n\nEs una llave normalucha pero se nota que no se usa mucho.\n\n{nombre}: Gracias, me la llevaré, ¿al sótano se va por ahí?\n\nDespués de una confirmación por parte del mayordomo vas en esa dirección hasta encontrar la puerta.")
+        abrir = "loop"
+        while abrir == "loop":
+            abrir = input("\n¿Debería abrir la puerta del sótano? [Y/N]: ")
+            if abrir == "Y" or abrir == "y":
+                print(f"\nDecidid{o} a abrir la puerta del sótano introduces la llave en la cerradura, giras la llave y escuchas un sonido metálico confirmándote que has abierto la cerradura, ahora solo queda abrir la puerta. Pones tu mano derecha en la puerta y empujas de manera que la puerta se abre lentamente de manera que empiezas a ver... nada, porque no hay luz.\nVas a buscar a Mayordomo para pedirle alguna linterna o vela o cualquier cosa que te ilumine lo suficiente como para poder ver algo pero no lo encuentras. Vuelves al sótano pero es imposible ver nada así que te rindes y te vas a dormir, pero has sido lo suficientemente valiente como para abrir la puerta y eso ya es mucho.")
+                del abrir
+                break
+            elif abrir == "N" or abrir == "n":
+                print(f"\n{nombre}: ¿Valiente yo? desde luego que no, no voy a abrir esa maldita puerta.\n\nDespués de decir eso te vas a dormir")
+                del abrir
+                break
+            else: abrir = "loop"
+            print("???")
+        break
+    if decision_3 == "4":
+        print(f"\nMayordomo: Esa es la llave de mi habitación, {señor}, pero si la quieres aquí la tienes, no te olvides de devoverla.\n\nObtienes... ¿LLave del cuarto de Mayordomo?\n\nY después de saber que es la llave de SU habitación te vas a dormir sin siquiera ver la puerta.")
+        break
+    else: decision_3 = "loop"
+    print('\n???')
+del decision_3
+print(f"\n...\n\nUn nuevo día comienza, y tú te depiertas dispuest{o} a afrontarlo, claro, eso sería si no fuese porque no has dormido nada en toda la noche, al fin y al cabo te han secuestrado y ahora te quieren llevar a una torre para que veas a no sé quien. En fin, ya es de día y tienes que continuar con esta pequeña... \"aventura\" así que te levantas de la cama y vas al salón donde viste a Mayordomo por última vez la noche anterior, pero allí en vez de encontrarte con Mayordomo te encuentras con tu queridísimo amigo Chófer...\n\nChófer: ¿Ya estás aquí? Perfecto. Vamos, te guiaré hasta la Torre, pero tendrás que seguir tú sol{o} a partir de ahí.\nChófer te acompaña como él mismo prometió hasta que...\n...\n...\n...\n...\nTe despiertas dentro de la Torre (sí, te ha vuelto a dormir).")
+print(f"{nombre}: Maldito Chófer, me ha vuelto a dormir, y ahora estoy aquí dentro, imagino que tendré que subir...\n\nEstás dentro de la Torre finalmente, es una torre circular con una escalera de caracol, todas las paredes y suelos están hechos con ladrillos negros y está iluminada solo por antorchas. El ambiente no es el mejor del mundo y no sabes que te espera arriba del todo, sin embargo ya estás aquí, ya estás dentro de la Torre, y frente a ti tienes unas escaleras, unas escaleras que suben hasta lo má alto de este lugar donde alguien te espera. Adelante.\n")
+count_original = count
+print("Si quieres subir las escaleras escribe \"Subir\" hasta llegar arriba y si quieres dejar de subir las escaleras escribe \"Dejar de subir\".\n")
+while count > 0:
+    subir = "x"
+    subir = input()
+    if subir == "Subir" or subir == "subir":
+        pass
+    elif subir == "Dejar de subir" or subir == "dejar de subir":
+        if count < count_original:
+            print(f"\nVaya, parece que te has rendido, pero al menos lo admites, admites que dejarás de subir las escaleras de esta Torre, enhorabuena.\nTe das media vuelta, al final todo esto es una pérdida de tiempo.\nComienzas a bajar un escalón, luego otro, y otro, y otro, y otro, y otro.\nEscuchas el sonido de tus pisadas sobre la roca mientras desciendes.\nY entonces, mientras bajas una voz llega hasta tus oídos desde algún lugar que no eres capa de reconocer.\n\n???: ¿Te vas?¿Te rindes?¿Te niegas a seguir subiendo? Eres débil. ¿Quieres bajar? Ohh, claro que bajarás.\n\nY en ese momento sientes como algo te empuja, te tropiezas y empiezas a caer escaleras abajo. Puede que pienses que habías subido muy pocos escalones, pero a pesar de eso la caída se te hace eterna como si hubiesen aparecido decenas de esalones bajo tus pies. Escuchas claramente el sonido de tu cuerpo chocando contra las escaleras, notas como algunos de tus huesos se rompen y como cada vez más partes distintas de tu cuerpo empiezan a dolerte. No puedes hacer nada para dejar de caer, empiezas a sentirte muy maread{o} y ya ni siquiera puedes pensar con claridad.\nTe parece escuchar algo, un \"Hasta nunca\" o algo parecido, quizás solo sean imaginacioes tuyas, es imposible saberlo en estas condiciones, de hecho, acabas de perder la conciencia, y después de eso... nada. Todo se acabó, no has llegado hasta el final, bueno, sí has llegado al final, a tu final, porque estás acabad{o}, has muerto.\n\nEste es el fin de tu historia.")
+        elif count == count_original:
+            print("\n¿En serio?¿No vas a subir ni siquiera un solo escalón? No merece la pena que escriba un final para ti, no has subido ningún escalón, con haber subido un escalón y luego bajar ya hubieses tenido un buen final, pero no, ni uno solo. Eres una gallina, una gran gallina que no sube ni un escalón.\nPor dios era obvio que tenías que subir arriba, anda anda, vete ahora mismo a rejugar el juego y toma mejores decisiones esta vez.")
+        escaleras = count_original - count
+        with open("Torre Infinita.txt", "a") as k:
+            k.write(f"¡Muchas gracias {nombre} por jugar mi juego!\nHas subido un total de {escaleras} escalones, no has conseguido subir hasta arriba.\n\n@aguacate-uwu en github ;)\n\n")
+        exit()
+    elif subir != "Subir" or subir != "subir" or subir != "Dejar de subir" or subir != "dejar de subir":
+        print("\n???\nRecuerda que si quieres subir las escaleras debes escribir \"Subir\" y si quieres dejar de subir las escaleras debes escribir \"Dejar de subir\".\n")
+        count = count + 1
+    count = count - 1
+print(f"\nSubes un escalón, y otro, y otro y sigues subiendo, subes tanto que esto parece una... Torre infinita. Pero no lo es porque acabas de llegar arriba, has subido todos los escalones y ahora tienes frente a ti una gran puerta vieja.\nAntes de hacer nada descansas un poco y tomas aire.")
+continuar = "loop"
+while continuar == "loop":
+    continuar = input("¿Deseas continuar ahora? [Y/N]\n")
+    if continuar == "Y" or continuar == "y":
+        break
+    elif continuar == "N" or continuar == "n":
+        print("Descansas un poco más, han sido muchas escaleras.\n...\n...\n...")
+        continuar = "loop"
+    else: continuar = "loop"
+print(f"Bien, ya es hora de avanzar, has descansado lo suficiente y has subido suficientes escalones, hora de abrir la puerta y afrontar tu destino o lo que sea que te espere dentro.\nEstás dispuest{o} a abrir la puerta, sin embargo llevas ya varios minutos más frente a ella, inmóvil, sin llegar a abrirla, no eres capaz.\nFinalmete te das unos golpes en la cara y a pesar de todo te dispones a abrir la puerta. Y, efectivamenten, esta vez la abres.\nNada más abrir la puerta lo primero en lo que te fijas es en la persona que hay delante y la ventana que tiene detrás, todo el interior de la Torre estaba iluminado por antorchas y no tenía ningún tipo de ventana, ahora la luz te llega directamente a la cara y a los ojos y es casi agradable. El resto de la habitación tampoco se parece mucho a todo lo que has visto desde que empezó todo esto, con el único detalle de que las paredes siguen siendo de ladrillos negros pero todo lo demás es más lujoso y está más cuidado, ves alfombras, cuadros y demás tipos de decoración, con toques rojos y escarlatas.\n\n???: Por fin estás aquí. Te estaba esperando, como supondrás soy #1?x@0. Te felicito, no muchos logran llegar hasta aquí.\n\n{nombre}: ¿Por qué querías verme?\n\n#1?x@0: Busco a alguien que me sustituya, aunque no lo creas no todo el mundo es capaz de aguantar en este lugar y llegar a tener una conversación conmigo, y tú incluso le caes bien a mis subordinados, sin duda podrías servirme.\n\n{nombre}: ¿Y por qué yo?¿Cómo me encontraste?\n\n#1?x@0: Simple, cuanto con un par de espías como subordinados que se encargan de recopilar información sobre distintas personas para buscar a alguien que sirva coo candidato, en primer lugar si te eligieron fue porque contabas con ciertas cualidades y aptitudes, y en segundo lugar, te envié la invitación porque pasaste mi filtro, y no nos equivocábamos, por algo has llegado hasta aquí.\n\n{nombre}: ...\n\n#1?x@0: Llegados a este punto no queda mucho más que decir, todavía no sé si eres dign{o} de sustituirme pero la manera más fácil de comprobarlo es que tomes mi puesto aquí y ahora, felicidades.\n\nY así fue como sustituiste a #1?x@0 al llegar a lo más alto de aqulla Torre negra tan imponente a la que te habían invitado con aquella carta tan extraña, no obstante, no seré yo quien narre el final de esta historia, sino tú, adelante termina el final por mí.\n")
+final = input()
+escaleras = count_original - count
+with open("Torre Infinita.txt", "a") as k:
+    k.write(f"¡Muchas gracias {nombre} por jugar mi juego!\nHas subido un total de {escaleras} escalones y has logrado subir hasta arriba de la Torre. ¡Enhorabuena!\nTu final ha sido:\n{final}\n\n@aguacate-uwu en github ;)\n\n")
+exit()
